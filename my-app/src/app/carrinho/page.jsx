@@ -2,8 +2,10 @@ import styles from './page.module.css';
 
 export default function Carrinho(){
     return(
-        <div>
-            Carrinho
-        </div>
+        <>
+            <div>
+                Carrinho
+            </div>
+        </>
     )
 }
