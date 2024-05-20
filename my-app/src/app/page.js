@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       Home
-      <Link href={'carrinho'}>Carrinho</Link>
+      <Link href={'login'}>Carrinho</Link>
     </main>
   );
 }
