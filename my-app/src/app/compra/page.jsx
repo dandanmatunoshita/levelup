@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from './compra.module.css';
 
 export default function Compra(){
     return(

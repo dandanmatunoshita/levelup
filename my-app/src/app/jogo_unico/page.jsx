@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from './jogo_unico.module.css';
 
 export default function JogoUnico(){
     return(

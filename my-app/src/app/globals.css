@@ -78,3 +78,9 @@ p{
       font-size: 30%;
     }
 }
+
+:root{
+	--primary-color: #523366;
+    --secondary-color: #7F1FBB;
+    --tertiary-color: #AF9CBB;
+}
