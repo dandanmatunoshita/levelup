@@ -15,7 +15,7 @@ export default function Cadastro(){
             <div className={styles.cadastro_body}>
                 <div className={styles.cadastro_img}>
                     <Image
-                    src="/img_login.jpg"
+                    src="/Rectangle 34.svg"
                         width={600}
                         height={600}
                     />

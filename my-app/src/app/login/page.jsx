@@ -18,7 +18,8 @@ export default function Login(){
             <div className={styles.login_body}>
                 <div className={styles.login_img}>
                     <Image
-                    src="/img_login.jpg"
+                    //src="/img_login.jpg"
+                    src="/Rectangle 33.svg"
                         width={600}
                         height={600}
                     />
