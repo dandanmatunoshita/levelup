@@ -1,0 +1,41 @@
+.navbar{
+    background-color: var(--secondary-color);
+}
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.navitem input{
+    border-radius: 32px;
+    width: 800px;
+    height: 50px;
+    font-size: large;
+    padding-left: 1rem;
+}
+
+.navitem{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.subnavlist{
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    gap: 1rem;
+    background-color: var(--subnavbar);
+
+}
+
+.subnavlist li{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.subnavlist .select{
+    background-color: #2F3141;
+    padding: 0.5rem;
+}
