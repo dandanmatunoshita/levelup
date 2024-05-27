@@ -10,6 +10,7 @@ export default function Login(){
     const router = useRouter();
     
     return(
+        
         <div className={styles.login_container}>
             <div className={styles.login_header}>
                 <button className={styles.btn_primary} onClick={()=>router.push('/cadastro')}>Cadastre-se</button>

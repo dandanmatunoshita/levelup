@@ -7,7 +7,7 @@ import Login from "./login/page";
 export default function Home() {
   return (
     <main className={styles.main}>
-      
+      <Login></Login>
     </main>
   );
 }
