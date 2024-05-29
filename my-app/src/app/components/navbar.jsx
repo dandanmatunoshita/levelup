@@ -1,11 +1,8 @@
-import { useRouter } from 'next/navigation'
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './navbar.module.css';
 
 export default function Navbar({page}){
-    const router = useRouter();
-
     return(
         <nav className={styles.navbar}>
             <ul className={styles.navlist}>

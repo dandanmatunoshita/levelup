@@ -1,0 +1,62 @@
+.unico_body{
+    background-color: var(--primary-color);
+    min-height: 85.2vh;
+    padding: 6rem 10rem;
+    font-size: 3rem;
+}
+
+.unico_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.unico_card{
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.unico_body h1{
+    color: #fff;
+}
+.unico_body span{
+    color: black;
+}
+.unico_titulo{
+    background-color: var(--secondary-color);
+    padding: 6rem 6rem;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.unico_under{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 6rem;
+}
+
+.unico_preco{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.unico_botao{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.unico_descricao{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
