@@ -1,0 +1,15 @@
+.inicio_body{
+    background-color: var(--primary-color);
+    min-height: 85.2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 15rem;
+    
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}

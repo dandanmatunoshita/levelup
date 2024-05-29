@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 3rem;
+    margin: 0;
 }
 
 .navitem input{
@@ -28,12 +29,14 @@
     padding: 0 10rem;
     gap: 1rem;
     background-color: var(--subnavbar);
-
+    margin: 0;
 }
 
-.subnavlist li{
+.subnavlist li a{
     color: #fff;
     font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0;
 }
 .subnavlist .select{
     background-color: #2F3141;
