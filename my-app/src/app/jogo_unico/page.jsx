@@ -1,8 +1,13 @@
+'use client';
+
 import Navbar from '../components/navbar';
 import Image from 'next/image';
 import styles from './jogo_unico.module.css';
+import { useRouter } from 'next/navigation'
 
 export default function JogoUnico(){
+    const router = useRouter();
+
     return(
         <div className={styles.unico_container}>
             <Navbar/>
@@ -21,7 +26,7 @@ export default function JogoUnico(){
                                 <span>R$ 100,00</span>
                             </div>
                             <div className={styles.unico_botao}>
-                                <button>Adicionar ao carrinho</button>
+                                <button onClick={()=>router.push('/carrinho')}>Adicionar ao carrinho</button>
                             </div>  
                         </div>
                     </div>

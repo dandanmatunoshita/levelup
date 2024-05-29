@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './inicio.module.css';
-import { useEffect } from 'react';
 import Navbar from '../components/navbar';
 import Image from 'next/image';
 import Card from '../components/card';
