@@ -22,7 +22,7 @@ export default function Navbar({page}){
                     <Image src={"/carrinho.svg"} 
                             width={60}
                             height={60}/>
-                    <Image src={"/perfil (2).svg"}
+                    <Image src={"/perfil.svg"}
                             width={60}
                             height={60}/>
                 </li>

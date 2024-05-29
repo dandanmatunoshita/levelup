@@ -38,8 +38,23 @@ export default function JogoUnico(){
                     <div className={styles.unico_comentitulo}>
                         <h2>Comentário</h2>
                     </div>
-                    <div className={styles.unico_comentexto}>
-                        <p>Red Dead Redemption 2 é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games. O jogo se passa em 1899, no final da era do Velho Oeste, e segue a história do fora-da-lei Arthur Morgan, membro da gangue Van der Linde.</p>
+                    <div className={styles.unico_comeninfo}>
+                        <div className={styles.unico_comenup}>
+                            <div className={styles.unico_comennome}>
+                                <Image src={"/perfil.svg"} width={30} height={30}/>
+                                <span>Lucas</span>
+                            </div>
+                            <div className={styles.unico_comenestrela}>
+                                <Image src={"/estrela.svg"} width={24} height={24}/>
+                                <Image src={"/estrela.svg"} width={24} height={24}/>
+                                <Image src={"/estrela.svg"} width={24} height={24}/>
+                                <Image src={"/estrela.svg"} width={24} height={24}/>
+                                <Image src={"/estrela.svg"} width={24} height={24}/>
+                            </div>
+                        </div>
+                        <div className={styles.unico_comentexto}>
+                            <p>Red Dead Redemption 2 é um jogo de ação e aventura em mundo aberto desenvolvido pela Rockstar Games. O jogo se passa em 1899, no final da era do Velho Oeste, e segue a história do fora-da-lei Arthur Morgan, membro da gangue Van der Linde.</p>
+                        </div>
                     </div>
                 </div>
             </div>

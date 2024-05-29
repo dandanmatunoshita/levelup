@@ -54,9 +54,61 @@
     transition: 0.3s;
 }
 
-.unico_descricao{
+.unico_descricao , .unico_comentario{
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;    
+    margin-top: 3rem;
+    border-radius: 20px;
+    padding-bottom: 2rem;
+}
+.unico_descricao{
+    gap: 2rem;
+}
+.unico_desctitulo, .unico_comentitulo{
+    background-color: var(--tertiary-color);
+    padding: 2rem;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.unico_desctexto{
+    padding: 0 2rem;
+}
+.unico_comentario{
+    background-color: var(--tertiary-color);
+}
+
+.unico_comenup{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.unico_comennome, .unico_comenestrela{
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.unico_comennome{
+    gap: 10rem;
+    width: 50vw;
+    padding-right: 20rem;
+}
+.unico_comenestrela{
+    width: 30vw;
+    gap: 3rem;
+    border-radius: 20px;
+}
+.unico_comentexto{
+    margin: 0 10rem;
+    padding: 2rem 10rem;
+    background-color: #fff;
+    border-radius: 20px;
 }
