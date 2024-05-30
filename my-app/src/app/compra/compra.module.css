@@ -1,0 +1,11 @@
+.compra_body{
+    display: flex;
+    background-color: var(--primary-color);
+    min-height: 85.2vh;
+    color: #fff;
+
+}
+
+.compra_info h1{
+    font-size: 3rem;
+}
