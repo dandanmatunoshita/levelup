@@ -3,9 +3,96 @@
     background-color: var(--primary-color);
     min-height: 85.2vh;
     color: #fff;
+    padding: 6rem 10rem;
+    justify-content: space-between;
 
 }
 
-.compra_info h1{
+.compra_container h1{
     font-size: 3rem;
+}
+.compra_container h2{
+    font-size: 2rem;
+}
+.compra_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.compra_cidade_estado, .compra_validade_cvc{
+    display: flex;
+    gap: 2rem;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grupo label{
+    font-size: 1.5rem;
+}
+.grupo input{
+    border-radius: 20px;
+    width: 50rem;
+    height: 3rem;
+    color: black;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.compra_cidade input, .compra_validade input{
+    width: 38rem;
+}
+.compra_estado input, .compra_cvc input{
+    width: 10rem;
+}
+
+.compra_carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    height: 40rem;
+    padding: 1rem 15rem;
+    border-radius: 20px;
+    color: black;
+}
+.compra_carrinho h2{
+    font-size: 3rem;
+}
+
+.compra_card_info{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 2rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.compra_card_bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.compra_preco{
+    font-size: 1.5rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+.compra_card_bot button{
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 1rem 10rem;
 }
