@@ -3,8 +3,12 @@
 import Navbar from '../components/navbar';
 import styles from './compra.module.css';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Compra(){
+
+    const router = new useRouter();
+
     return(
         <div className={styles.compra_container}>
             <Navbar/>
@@ -60,7 +64,7 @@ export default function Compra(){
                             <span>Total</span>
                             <span><strong>R$ 100,00</strong></span>
                         </div>
-                        <button><strong>Finalizar</strong></button>
+                        <button onClick={()=>router.push('/aprovado')}><strong>Finalizar</strong></button>
                     </div>
                 </div>
             </div>

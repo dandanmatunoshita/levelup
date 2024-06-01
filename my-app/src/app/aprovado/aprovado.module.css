@@ -1,0 +1,21 @@
+
+.aprovado_body{
+    background-color: var(--primary-color);
+    min-height: 85.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.aprovado_body h2{
+    font-size: 4rem;
+}
+
+.aprovado_body button{
+    font-size: 2rem;
+    background-color: var(--secondary-color);
+    padding: 2rem 6rem;
+    border-radius: 20px;
+}
