@@ -7,7 +7,7 @@ import Card from '../components/card';
 import Link from 'next/link';
 
 export default function Inicio() {
-
+    const token = localStorage.getItem('token');
     const data = [
         { id: 1, imagem: '/gow.png', nome: 'God of War', preco:"R$100,00"},
         { id: 2, imagem: '/lou.png', nome: 'The Last of Us', preco:"R$100,00"},
@@ -27,7 +27,7 @@ export default function Inicio() {
         <div className={styles.container}>
             <Navbar />
             <div className={styles.inicio_body}>
-                
+                    <h1>{token}</h1>
                     {data.map((info)=>(
                         <Link href="/jogo_unico" className={styles.link}>
                             <Card info={info} />

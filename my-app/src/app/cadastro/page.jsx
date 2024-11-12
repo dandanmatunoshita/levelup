@@ -40,7 +40,7 @@ export default function Cadastro(){
 
             if (response.ok) {
                 alert("Cadastro realizado com sucesso!");
-                router.push('/inicio');
+                router.push('/login');
             } else {
                 const errorData = await response.json();
                 alert(`Erro no cadastro: ${errorData.message}`);
