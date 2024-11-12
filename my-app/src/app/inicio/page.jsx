@@ -1,39 +1,48 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import styles from './inicio.module.css';
 import Navbar from '../components/navbar';
-import Image from 'next/image';
 import Card from '../components/card';
 import Link from 'next/link';
+import { server } from '../config';
 
 export default function Inicio() {
-    const token = localStorage.getItem('token');
-    const data = [
-        { id: 1, imagem: '/gow.png', nome: 'God of War', preco:"R$100,00"},
-        { id: 2, imagem: '/lou.png', nome: 'The Last of Us', preco:"R$100,00"},
-        { id: 3, imagem: '/zelda.png', nome: 'Legend of Zelda', preco:"R$100,00"},
-        { id: 4, imagem: '/gow.png', nome: 'God of War', preco:"R$100,00"},
-        { id: 5, imagem: '/lou.png', nome: 'The Last of Us', preco:"R$100,00"},
-        { id: 6, imagem: '/zelda.png', nome: 'Legend of Zelda', preco:"R$100,00"},
-        { id: 7, imagem: '/gow.png', nome: 'God of War', preco:"R$100,00"},
-        { id: 8, imagem: '/lou.png', nome: 'The Last of Us', preco:"R$100,00"},
-        { id: 9, imagem: '/zelda.png', nome: 'Legend of Zelda', preco:"R$100,00"},
-        { id: 10, imagem: '/gow.png', nome: 'God of War', preco:"R$100,00"},
-        { id: 11, imagem: '/lou.png', nome: 'The Last of Us', preco:"R$100,00"},
-        { id: 12, imagem: '/zelda.png', nome: 'Legend of Zelda', preco:"R$100,00"},
-      ];
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${server}game`);
+                if (response.ok) {
+                    const games = await response.json();
+                    const formattedData = games.map(game => ({
+                        id: game.jog_id,
+                        nome: game.jog_titulo,
+                        preco: `R$${game.jog_preco},00`,
+                        imagem: '/gow.png'
+                    }));
+                    setData(formattedData);
+                } else {
+                    console.error("Erro ao buscar os jogos:", response.statusText);
+                }
+            } catch (error) {
+                console.error("Erro na requisição:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div className={styles.container}>
             <Navbar />
             <div className={styles.inicio_body}>
-                    <h1>{token}</h1>
-                    {data.map((info)=>(
-                        <Link href="/jogo_unico" className={styles.link}>
-                            <Card info={info} />
-                        </Link>
-                    ))}
-                
+                {data.map((info) => (
+                    <Link key={info.id} href={`/jogo_unico/${info.id}`} className={styles.link}>
+                        <Card info={info} />
+                    </Link>
+                ))}
             </div>
         </div>
     );
